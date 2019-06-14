@@ -7,24 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
     <title>NYTimes</title>
 </head>
 
 <body>
-        <div class="jumbotron col-6 bg-primary text-white d-flex justify-content-center"><h1 class="display-4">New York Times Search</h1></div>
+        <div class="jumbotron col-6 bg-primary text-white d-flex justify-content-center middle"><h1 class="display-4">New York Times Search</h1></div>
         <div id="form-box">
-            <form class="pretty-form">
-                <input type="text">
+            <form class="pretty-form col-6 middle">
+                <label>Search Term:</label>
+                <input type="text" data-form="search term">
                 <br>
+                <label>Number of Records to Retrieve:</label>
                 <select>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="1"><span>1</span></option>
+                    <option value="5"><span>5</span></option>
+                    <option value="10"><span>10</span></option>
                 </select>
                 <br>
-                <input type="text">
+                <label>Start Year (Optional):</label>
+                <input type="text" data-year="data year start">
                 <br>
-                <input type="text">
+                <label for="">End Year (Optional):</label>
+                <input type="text" data-year-end="data year end">
                 <br>
                 <input type="submit">
             </form>
