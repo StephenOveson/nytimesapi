@@ -12,26 +12,29 @@
 </head>
 
 <body>
-        <div class="jumbotron col-6 bg-primary text-white d-flex justify-content-center middle"><h1 class="display-4">New York Times Search</h1></div>
-        <div id="form-box">
-            <form class="pretty-form col-6 middle">
+        <div class="jumbotron col-6 bg-primary text-white d-flex justify-content-center mx-auto"><h1 class="display-4">New York Times Search</h1></div>
+        <div class="border border-primary col-6 mx-auto" id="form-box">
+            <div class="bg-primary text-white">
+            <h2 class="text-center">Search Paramaters</h2>
+            </div>
+            <form class="pretty-form mx-auto">
                 <label>Search Term:</label>
-                <input type="text" data-form="search term">
+                <input type="text" data-form="search term" class="form-control">
                 <br>
                 <label>Number of Records to Retrieve:</label>
-                <select>
+                <select class="form-control">
                     <option value="1"><span>1</span></option>
                     <option value="5"><span>5</span></option>
                     <option value="10"><span>10</span></option>
                 </select>
                 <br>
                 <label>Start Year (Optional):</label>
-                <input type="text" data-year="data year start">
+                <input type="text" data-year="data year start" class="form-control">
                 <br>
                 <label for="">End Year (Optional):</label>
-                <input type="text" data-year-end="data year end">
+                <input type="text" data-year-end="data year end" class="form-control">
                 <br>
-                <input type="submit">
+                <button class="form-control">Submit</button>
             </form>
         </div>
         <div id="top-articles"></div>
