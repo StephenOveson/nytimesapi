@@ -12,10 +12,10 @@
 </head>
 
 <body>
-        <div class="jumbotron col-6 bg-primary text-white d-flex justify-content-center mx-auto"><h1 class="display-4">New York Times Search</h1></div>
-        <div class="border border-primary col-6 mx-auto" id="form-box">
-            <div class="bg-primary text-white">
-            <h2 class="text-center">Search Paramaters</h2>
+        <div class="jumbotron col-8 bg-primary text-white d-flex justify-content-center mx-auto"><h1 class="display-4">New York Times Search</h1></div>
+        <div class="col-8 mx-auto border border-primary panel panel-primary" id="form-box">
+            <div class="bg-primary text-white panel-heading">
+            <h3 class="text-center panel-title"><span class="fa fa-list-li"></span>Search Paramaters</h2>
             </div>
             <form class="pretty-form mx-auto">
                 <label>Search Term:</label>
@@ -34,7 +34,8 @@
                 <label for="">End Year (Optional):</label>
                 <input type="text" data-year-end="data year end" class="form-control">
                 <br>
-                <button class="form-control">Submit</button>
+                <button class="btn btn-secondary" id="search">Submit</button>
+                <button class="btn btn-secondary" id="clear">Clear Search</button>
             </form>
         </div>
         <div id="top-articles"></div>
